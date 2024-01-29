@@ -6,32 +6,6 @@
 trigger:
 - master
 
-parameters:
-- name: Login
-  displayName: User login (e.g. jsmith)
-  type: string
-  default: ''
-- name: Name
-  displayName: User name (e.g. John Smith)
-  type: string
-  default: ''
-- name: Email
-  displayName: Email (@opengi.co.uk, @opengi.pl or @opengi.mk)
-  type: string
-  default: ''
-- name: TenantSource
-  displayName: Tenant source
-  type: string
-  default: 'n/a'
-  values:
-  - n/a
-  - integration
-  - prod
-- name: SiteCode
-  displayName: Tenant sitecode
-  type: string
-  default: 'VM00'
-
 pool:
   vmImage: ubuntu-latest
 
